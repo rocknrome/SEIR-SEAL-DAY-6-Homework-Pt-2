@@ -26,7 +26,7 @@ const words = {  //declared an object
 //////////////////////////////
 // Interact With the User
 //Now that we have our object set up, we want to work on accepting user input so that we can save it to the object.
-function startMadlib() {
+3function startMadlib() {
     words.number = prompt("Enter any number");
     words.adjective = prompt("Enter any adjective");
     words.pluralNoun = prompt("Enter plural noun");
@@ -44,3 +44,27 @@ console.log(words);
 //After filling out all the prompts, you should thus see something like the following in the browser console:
 
 
+
+//////////////////////////////
+// Create the Tech Startup MadLib Story!
+// Now that we've accepted the user's input and saved it to the object, we can use those values to create a MadLib!
+
+// Use the following story and concatenate or interpolate the values from the object into it.
+
+// Once upon a time a group of _____(number) General Assembly graduates
+// got together and made a startup called _____ (adjective) Technologies.
+// Their goal was to create smart _____(plural noun).
+// They approached the challenge _____ (adverb)
+// which ultimately lead them to _______(another adjective) fame.
+// Finally, once the user finishes submitting all prompts, they should be alerted of the story they've created! For example:
+console.log(`Once upon a time a group of ${words.number} General Assembly graduates`);
+console.log(`got together and made a startup called ${words.adjective} Technologies.`);
+console.log(`Their goal was to create smart ${words.pluralNoun}.`);
+console.log(`They approached the challenge ${words.adverb}`);
+console.log(`which ultimately lead them to ${words.anotherAdjective} fame.`);
+
+alert(`Once upon a time a group of ${words.number} General Assembly graduates, 
+\ngot together and made a startup called ${words.adjective} Technologies., 
+\nTheir goal was to create smart ${words.pluralNoun}., 
+\nThey approached the challenge ${words.adverb}, 
+\nwhich ultimately lead them to ${words.anotherAdjective} fame.`);
